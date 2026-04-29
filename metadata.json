@@ -1,0 +1,10 @@
+{
+  "name": "Chronicles of Nexus",
+  "description": "A high-fidelity life simulator featuring procedural world generation, deep character creation, and an AI-driven emergent narrative engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "AI-driven narrative generation",
+    "Procedural world building",
+    "Dynamic character simulation"
+  ]
+}
