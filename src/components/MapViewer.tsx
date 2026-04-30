@@ -91,15 +91,11 @@ export default function MapViewer({ worldSeed }: MapViewerProps) {
                   </div>
                 ) : (
                   <div className="w-full h-full grid" style={{ gridTemplateColumns: `repeat(${CHUNK_SIZE}, 1fr)` }}>
-                    {chunk.tiles.map((row, y) => (
-                      <React.Fragment key={y}>
-                        {row.map((tile, x) => (
-                          <div
-                            key={x}
-                            style={{ backgroundColor: getColor(tile), width: TILE_SIZE, height: TILE_SIZE }}
-                          />
-                        ))}
-                      </React.Fragment>
+                    {chunk.tiles.flat().map((tile, i) => (
+                      <div 
+                        key={i} 
+                        style={{ backgroundColor: getColor(tile), width: TILE_SIZE, height: TILE_SIZE }} 
+                      />
                     ))}
                   </div>
                 )}
